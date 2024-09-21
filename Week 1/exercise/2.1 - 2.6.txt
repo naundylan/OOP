@@ -1,0 +1,36 @@
+2.1:
+Biến tham chiếu là bí danh của một biến khác
+VD:
+int a = 10
+int &tong = a
+
+2.2:
+vì array[3] là biến cục bộ chỉ dùng trong hàm nên khi ra khỏi hàm thì sẽ biến mất
+
+2.3:
+là hàm được xây dựng mà khi truyền tham số có sử dung lệnh gán giá trị
+VD:
+int tong(int a, int b, int c = 10, int d = 20) {
+	//code
+}
+
+2.4:
+là hàm yêu cầu trình biên dịch trực tiếp thay thế đoạn mã của hàm đó ngay tại vị trí gọi hàm
+VD:
+thay vì khi gọi hàm và phải đi qua các bước truyền tham số v.v
+int tong(int a, int b) {
+	return a + b;
+}
+thì trình biên dịch sẽ trực tiếp thay thế đoạn mã vào nơi gọi hàm:
+int tong = a + b; //tong(a, b)
+
+2.5:
+là cơ chế cho phép định nghĩa nhiều hàm cùng tên nhưng khác nhau về số lượng, kiểu dữ liệu truyền vào
+VD:
+int tong(int a, int b) {
+}
+int tong(int a, int c) {
+}
+
+2.6:
+hàm này không có chức năng tải bội vì tên hàm và tham số của hàm hoàn toàn giống nhau
