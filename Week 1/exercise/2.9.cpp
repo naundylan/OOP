@@ -24,12 +24,12 @@ void giaipt(float a, float b, float c, float &x1, float &x2) {
 			cout<<"vo nghiem"<<endl;
 		}
 		else if (d==0) {
-			x1 = -b/2*a;
-			x2 = -b/2*a;
+			x1 = -b/(2*a);
+			x2 = -b/(2*a);
 		}
 		else {
-			x1 = (-b+sqrt(d))/2*a;
-			x2 = (-b-sqrt(d))/2*a;
+			x1 = (-b+sqrt(d))/(2*a);
+			x2 = (-b-sqrt(d))/(2*a);
 		}
 	}
 }
