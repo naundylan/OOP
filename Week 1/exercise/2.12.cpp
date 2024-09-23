@@ -17,7 +17,7 @@ void nhapmang(int u[], int n) {
 	}
 }
 
-void nhapmang(int u[][m], int n, int m) {
+void nhapmang(int u[][100], int n, int m) {
 	for(int i=0; i<n; i++) {
 		for(int j=0; j<m; j++) {
 			cin>>u[i][j];
@@ -31,7 +31,7 @@ void tong(int u[], int v[], int n, int res[]) {
 	}
 }
 
-void tong(int u[][m], int v[][m], int n, int m, int res[][m]) {
+void tong(int u[][100], int v[][100], int n, int m, int res[][100]) {
 	for(int i=0; i<n; i++) {
 		for(int j=0; j<m; j++) {
 			res[i][j] = u[i][j] + v[i][j];
@@ -53,10 +53,11 @@ int main() {
 	cout<<endl;
 	
 	// mang hai chieu
+	int m;
 	nhap(n, m);
-	int q[n][m], p[n][m], kq[n][m];
-	nhapmang(u, n, m);
-	nhapmang(u, n, m);
+	int q[n][100], p[n][100], kq[n][100];
+	nhapmang(q, n, m); // Thay thế u bằng q
+	nhapmang(p, n, m); // Thay thế u bằng p
 	tong(q, p, n, m, kq);
 	for(int i=0; i<n; i++) {
 		for(int j=0; j<m; j++) {
