@@ -37,8 +37,7 @@ void date::nhap() {
 			cout<<"Thang khong hop le, vui long nhap lai!"<<endl;
 		if(ngay < 1 && ngay > ngaytrongthang(thang, nam))
 			cout<<"Ngay khong hop le, vui long nhap lai!"<<endl;
-	}
-	while(thang < 1 || thang > 12 || ngay < 1 || ngay > ngaytrongthang(thang, nam));
+	} while(thang < 1 || thang > 12 || ngay < 1 || ngay > ngaytrongthang(thang, nam));
 }
 
 void date::xuat() {
@@ -79,5 +78,7 @@ int main() {
 	day.tang_1_Ngay();
 	
 	day.tang_n_Ngay();
+	
+	day.xuat();
 	return 0;
 }

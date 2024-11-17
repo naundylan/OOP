@@ -11,7 +11,7 @@ class Hocphan {
 		Hocphan() {}
 		Hocphan(string mhp,string thp, int stc) {
 			mahp = mhp;
-			tenhp=thp;
+			tenhp = thp;
 			sotc = stc;
 		}
 		 //cac ham lay gia tri thuoc tinh
